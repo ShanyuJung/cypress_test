@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -226,4 +226,31 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputLabel {
+  font-size: 40px;
+}
+
+.inputContainer input {
+  width: 300px;
+  font-size: 30px;
+}
+
+.main form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main button {
+  font-size: 40px;
+  margin: 20px 0px;
+  width: 100%;
 }
