@@ -13,7 +13,7 @@ export default function Home() {
     if (!firstNameRef.current || !lastNameRef.current) return;
 
     router.push(
-      `result?firstName=${firstNameRef.current.value}&lastName${lastNameRef.current.value}`
+      `result?firstName=${firstNameRef.current.value}&lastName=${lastNameRef.current.value}`
     );
   };
 
@@ -22,11 +22,11 @@ export default function Home() {
       <form onSubmit={submitHandler}>
         <div className={styles.inputContainer}>
           <label className={styles.inputLabel}>First Name</label>
-          <input required ref={firstNameRef} />
+          <input required ref={firstNameRef} id="firstName" />
         </div>
         <div className={styles.inputContainer}>
           <label className={styles.inputLabel}>Last Name</label>
-          <input required ref={lastNameRef} />
+          <input required ref={lastNameRef} id="lastName" />
         </div>
         <button>Submit</button>
       </form>
