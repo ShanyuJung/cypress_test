@@ -22,7 +22,6 @@ describe("Form Test", () => {
 
     // Submit the form
     cy.contains("button", "Submit").click();
-    cy.reload();
 
     // Assert the displayed values on the other page
     cy.contains("div", input1Value); // 替換為顯示第一個輸入值的元素選擇器
