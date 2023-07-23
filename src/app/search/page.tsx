@@ -163,7 +163,7 @@ const Search = () => {
     setKeyWord(event.target.value);
   };
 
-  console.log(displayPokemon, Pokemon, keyword);
+  console.log(displayPokemon);
 
   return (
     <div className={classes.container}>
@@ -172,11 +172,13 @@ const Search = () => {
         value={keyword}
         onChange={onChange}
       />
-      {displayPokemon.map((i, index) => (
-        <div key={index + 1} className={classes.item}>
-          {`${index + 1}-${i}`}
-        </div>
-      ))}
+      <ol>
+        {displayPokemon.map((i, index) => (
+          <li key={index + 1} className={classes.item}>
+            {`${i}`}
+          </li>
+        ))}
+      </ol>
     </div>
   );
 };
