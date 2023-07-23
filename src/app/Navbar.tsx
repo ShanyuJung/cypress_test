@@ -1,7 +1,7 @@
 import Link from "next/link";
 import classes from "./page.module.css";
 
-const ROUTE = ["home", "form"];
+const ROUTE = ["home", "form", "search"];
 const Navbar = () => {
   return (
     <nav className={classes.navbar}>
